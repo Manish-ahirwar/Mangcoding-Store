@@ -4,12 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
+    <!-- Remix Icon CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>Mangcoding Store</title>
 </head>
 <body>
     <!-- Header Start Here -->
-    <header>
+    <header class=" min-w-[1440px] mx-auto flex justify-between items-center min-h-[80px] px-40 shadow-md">
+        <div class="logo">
+            <a href="/">
+                <img src="./assets/images/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav class="min-w-[800px] flex items-center justify-between">
+            <ul class="flex  justify-around items-center gap-10 text-black">
+                <li class="hover:text-[#545BE8]"><a href="/">Home</a></li>
+                <li class="hover:text-[#545BE8]"><a href="#">Course</a></li>
+                <li class="hover:text-[#545BE8]"><a href="#">About Us</a></li>
+                <li class="hover:text-[#545BE8]"><a href="#">Article</a></li>
+                <li class="hover:text-[#545BE8]"><a href="#">Contact</a></li>
+               
+            </ul>
+            <div class="header-btn flex items-center gap-10  ">
+              <button class="py-[6px] px-8 border-1 rounded-lg cursor-pointer hover:bg-[#545BE8] hover:text-white">Log in</button>
+              <button class="py-[6px] px-8 rounded-lg bg-[#545BE8] text-white cursor-pointer hover:bg-amber-50 hover:border-1 hover:text-black">Register</button>
+            </div>
+        </nav>
 
     </header>
+    <!-- Header ends here -->
+
+    <!-- Hero Section Starts Here -->
+     <main class="">
+        <section class="hero-container min-h-[calc(100vh-80px)] px-40 bg-[#F5F5F5]
+        flex justify-between items-center">
+            <div class="left-content max-w-[560px] pb-30">
+                <p class="text-lg text-[#545BE8]">Lets <span class="font-bold ">Begins</span></p>
+                <h1 class="text-[64px] font-bold">Let's Find The Right <span class="text-[#545BE8]">Course</span> For Yor</h1>
+                <p class="text-[#969696] text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit facilis doloribus sed animi enim.</p>
+                <div class="hero-btn flex gap-8 mt-12">
+                    <button class="py-[6px] px-8 rounded-lg bg-[#545BE8] text-white cursor-pointer   hover:bg-[#F5F5F5] hover:border-1 hover:text-black">Register</button>
+                    <div class="play-icon flex items-center gap-1">
+                        <i class="text-[32px] text-amber-400 ri-play-circle-fill"></i>
+                        <button>Play Video</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-image">
+                <img src="./assets/images/hero_img.png" alt="hero-image">
+            </div>
+        </section>
+        <!-- Services Sections -->
+         <section class="min-h-[400px] pl-40 flex items-center ">
+            <div class="left-content max-w-[364px] px-4">
+                <p class="text-lg text-[#545BE8] uppercase">What We Give</p>
+                <h2 class="text-[40px] font-bold text-[#141E32]">What Do You Get From Us</h2>
+                <p class="text-lg text-[#969696]">Lorem ipsum dlor sit amet consectetur adipisicing elit. Ipsum modi ducimus sunt eum quasi assumenda.</p>
+            </div>
+            <div class="right-carousel flex gap-8">
+                <div class="card size-[267px] bg-[#545BE8] px-4 py-8 rounded-2xl  ">
+                    <div class="img bg-white size-10 rounded-full p-1">
+                        <img src="./assets/images/16.png" alt="">
+                    </div>
+                    <h3 class="text-white font-semibold mt-3 mb-3">Professional Teacher</h3>
+                    <p class="text-[#DDDDDD]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae beatae sunt ratione minus non porro magni</p>
+                </div>
+                <div class="card size-[267px] bg-[#545BE8] px-4 py-8 rounded-2xl  ">
+                    <div class="img bg-white size-10 rounded-full p-1">
+                        <img src="./assets/images/50.png" alt="">
+                    </div>
+                    <h3 class="text-white font-semibold mt-3 mb-3">Professional Teacher</h3>
+                    <p class="text-[#DDDDDD]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae beatae sunt ratione minus non porro magni</p>
+                </div>
+                <div class="card size-[267px] bg-[#545BE8] px-4 py-8 rounded-2xl  ">
+                    <div class="img bg-white size-10 rounded-full p-1">
+                        <img src="./assets/images/37.png" alt="">
+                    </div>
+                    <h3 class="text-white font-semibold mt-3 mb-3">Professional Teacher</h3>
+                    <p class="text-[#DDDDDD]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae beatae sunt ratione minus non porro magni</p>
+                </div>
+            </div>
+         </section>
+     </main>
 </body>
 </html>
